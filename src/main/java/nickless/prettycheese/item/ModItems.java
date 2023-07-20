@@ -14,10 +14,12 @@ public class ModItems {
 
     public static final Item CHEESE = registerItem("cheese", new Item(new FabricItemSettings()));
     public static final Item SALT = registerItem("salt", new Item(new FabricItemSettings()));
+    public static final Item CHEESEWHEEL = registerItem("cheesewheel", new Item(new FabricItemSettings()));
 
     private static void addItemsToFoodDrinkItemGroup(FabricItemGroupEntries entries){
         entries.add(CHEESE);
         entries.add(SALT);
+        entries.add(CHEESEWHEEL);
     }
     private static Item registerItem(String name,Item item){
         return Registry.register(Registries.ITEM, new Identifier(prettycheese.MOD_ID, name), item);
