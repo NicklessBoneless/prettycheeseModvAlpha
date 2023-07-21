@@ -2,6 +2,7 @@ package nickless.prettycheese;
 
 import net.fabricmc.api.ModInitializer;
 
+import nickless.prettycheese.item.ModItemGroups;
 import nickless.prettycheese.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,6 +13,7 @@ public class prettycheese implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 	}
 }

@@ -18,8 +18,10 @@ public class ModItems {
 
     private static void addItemsToFoodDrinkItemGroup(FabricItemGroupEntries entries){
         entries.add(CHEESE);
-        entries.add(SALT);
         entries.add(CHEESEWHEEL);
+    }
+    public static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries){
+        entries.add(SALT);
     }
     private static Item registerItem(String name,Item item){
         return Registry.register(Registries.ITEM, new Identifier(prettycheese.MOD_ID, name), item);
@@ -29,5 +31,6 @@ public class ModItems {
         prettycheese.LOGGER.info("Registering Mod items for" + prettycheese.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodDrinkItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientsItemGroup);
     }
 }

@@ -1,5 +1,7 @@
 {
   "item.prettycheese.cheese": "Cheese",
   "item.prettycheese.salt": "Salt",
-  "item.prettycheese.cheesewheel": "Cheese Wheel"
+  "item.prettycheese.cheesewheel": "Cheese Wheel",
+
+  "itemgroup.cheese": "Pretty Cheese Mod"
 }
