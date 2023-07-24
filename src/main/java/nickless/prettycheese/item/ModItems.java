@@ -9,6 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import nickless.prettycheese.prettycheese;
+import org.jetbrains.annotations.NotNull;
 
 public class ModItems {
 
@@ -16,11 +17,11 @@ public class ModItems {
     public static final Item SALT = registerItem("salt", new Item(new FabricItemSettings()));
     public static final Item CHEESEWHEEL = registerItem("cheesewheel", new Item(new FabricItemSettings()));
 
-    private static void addItemsToFoodDrinkItemGroup(FabricItemGroupEntries entries){
+    private static void addItemsToFoodDrinkItemGroup(@NotNull FabricItemGroupEntries entries){
         entries.add(CHEESE);
         entries.add(CHEESEWHEEL);
     }
-    public static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries){
+    public static void addItemsToIngredientsItemGroup(@NotNull FabricItemGroupEntries entries){
         entries.add(SALT);
     }
     private static Item registerItem(String name,Item item){
