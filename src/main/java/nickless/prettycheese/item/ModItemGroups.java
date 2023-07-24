@@ -7,6 +7,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import nickless.prettycheese.block.ModBlocks;
 import nickless.prettycheese.prettycheese;
 
 public class ModItemGroups {
@@ -14,9 +15,14 @@ public class ModItemGroups {
             new Identifier(prettycheese.MOD_ID,"cheese"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cheese"))
                     .icon( () -> new ItemStack(ModItems.CHEESE)).entries((displayContext, entries) -> {
+
+                        //ITEMS
                         entries.add(ModItems.CHEESE);
                         entries.add(ModItems.CHEESEWHEEL);
                         entries.add(ModItems.SALT);
+
+                        //BLOCKS
+                        entries.add(ModBlocks.SALT_BLOCK);
 
                     }).build());
 

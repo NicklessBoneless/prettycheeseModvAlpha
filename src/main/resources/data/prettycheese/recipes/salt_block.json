@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "prettycheese:salt"
+    }
+  },
+
+  "result": {
+    "item": "prettycheese:salt_block",
+    "count": 1
+  }
+}
