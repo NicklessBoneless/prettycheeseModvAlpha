@@ -3,6 +3,7 @@ package nickless.prettycheese.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -16,7 +17,6 @@ public class ModItems {
     public static final Item CHEESE = registerItem("cheese", new Item(new FabricItemSettings()));
     public static final Item SALT = registerItem("salt", new Item(new FabricItemSettings()));
     public static final Item CHEESEWHEEL = registerItem("cheesewheel", new Item(new FabricItemSettings()));
-
     private static void addItemsToFoodDrinkItemGroup(@NotNull FabricItemGroupEntries entries){
         entries.add(CHEESE);
         entries.add(CHEESEWHEEL);

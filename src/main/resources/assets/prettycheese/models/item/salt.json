@@ -2,5 +2,28 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "prettycheese:item/salt"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [ 0, 0, 0 ],
+      "translation": [ 0, 2, 0 ],
+      "scale": [ 0.55, 0.55, 0.55 ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [ 0, 0, 0 ],
+      "translation": [ 0, 2, 0 ],
+      "scale": [ 0.55, 0.55, 0.55 ]
+    },
+    "firstperson_righthand": {
+      "rotation": [ -25, -85, 0 ],
+      "translation": [ 2.5, 2, -0.5 ],
+      "scale": [ 0.75, 0.75, 0.75 ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [ -25, 85, 0 ],
+      "translation": [ 2.5, 2 , -0.5 ],
+      "scale": [ 0.75, 0.75, 0.75 ]
+
+    }
   }
 }
