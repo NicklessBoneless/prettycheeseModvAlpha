@@ -23,6 +23,7 @@ public class ModItemGroups {
 
                         //BLOCKS
                         entries.add(ModBlocks.SALT_BLOCK);
+                        entries.add(ModBlocks.CHEESE_WHEEL);
 
                     }).build());
 

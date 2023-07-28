@@ -1,0 +1,21 @@
+{
+  "textures": {
+    "particle": "prettycheese:block/cheese_wheel_Top",
+    "bottom": "prettycheese:block/cheese_wheel_Top",
+    "top": "prettycheese:block/cheese_wheel_Top",
+    "side": "prettycheese:block/cheese_wheel_Top"
+  },
+  "elements": [
+    {   "from": [ 1, 0, 1 ],
+      "to": [ 15, 8, 15 ],
+      "faces": {
+        "down":  { "texture": "#bottom", "cullface": "down" },
+        "up":    { "texture": "#top" },
+        "north": { "texture": "#side" },
+        "south": { "texture": "#side" },
+        "west":  { "texture": "#side" },
+        "east":  { "texture": "#side" }
+      }
+    }
+  ]
+}

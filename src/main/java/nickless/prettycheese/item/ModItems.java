@@ -3,8 +3,6 @@ package nickless.prettycheese.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.Block;
-import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -15,13 +13,10 @@ import org.jetbrains.annotations.NotNull;
 
 public class ModItems {
 
-    public static final Item CHEESE = registerItem("cheese",
-            new Item(new FabricItemSettings().
-                    food(new FoodComponent.Builder().hunger(4).saturationModifier(0.5f).build())));
+    public static final Item CHEESE = registerItem("cheese", new Item(new FabricItemSettings().food(ModFoodComponents.CHEESE)));
+    public static final Item CHEESEWHEEL = registerItem("cheesewheel", new Item(new FabricItemSettings().food(ModFoodComponents.CHEESEWHEEL)));
     public static final Item SALT = registerItem("salt", new Item(new FabricItemSettings()));
-    public static final Item CHEESEWHEEL = registerItem("cheesewheel",
-            new Item(new FabricItemSettings().
-                    food(new FoodComponent.Builder().hunger(14).saturationModifier(2f).build())));
+
     private static void addItemsToFoodDrinkItemGroup(@NotNull FabricItemGroupEntries entries){
         entries.add(CHEESE);
         entries.add(CHEESEWHEEL);
