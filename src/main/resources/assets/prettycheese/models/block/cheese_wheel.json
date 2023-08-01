@@ -1,9 +1,10 @@
+
 {
   "textures": {
-    "particle": "prettycheese:block/cheese_wheel_Top",
-    "bottom": "prettycheese:block/cheese_wheel_Top",
-    "top": "prettycheese:block/cheese_wheel_Top",
-    "side": "prettycheese:block/cheese_wheel_Top"
+    "particle": "prettycheese:block/cheese_wheel_side",
+    "bottom": "prettycheese:block/cheese_wheel_bottom",
+    "top": "prettycheese:block/cheese_wheel_top",
+    "side": "prettycheese:block/cheese_wheel_side"
   },
   "elements": [
     {   "from": [ 1, 0, 1 ],
